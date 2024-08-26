@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/1LqfcWT/web-design.jpg",
+     "title": "Web Design",
+     "instractor": "John Doe",
+     "category": "Web Design",
+  "details": "Learn the fundamentals of web design, including layout, color theory, and typography."
+     
+
+    },
+    {
+        "id": 2,
+        "image": "https://i.ibb.co/gPg2m33/UI-UX-Design.jpg",
+       "title": "UI-UX-Design ",
+       "instractor": "John Doe",
+       "category": "Design",
+  "details": "Master the principles of user interface and user experience design to create engaging digital products."
+
+
+  
+      },
+      {
+        "id": 3,
+        "image": "https://i.ibb.co/cYXKDvr/shopify.png",
+       "title": "Shopify",
+       "instractor": "John Doe",
+        "category": "E-commerce",
+  "details": "Learn how to set up, customize, and manage Shopify stores for effective online selling."
+  
+      },
+      {
+        "id": 4,
+        "image":"https://i.ibb.co/HTM6V7n/web-development.jpg",
+       "title": "Web Development",
+       "instractor": "John Doe",
+         "category": "Development",
+  "details": "Get hands-on experience with HTML, CSS, JavaScript, and popular frameworks to build modern websites."
+  
+      }
+ 
+  ]
+  

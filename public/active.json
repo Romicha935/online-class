@@ -1,0 +1,36 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/wh5Ry7L/Digital-Merketing.jpg",
+     "title": "Degital Merketing",
+     "instractor": "John Doe"
+     
+
+    },
+    {
+        "id": 2,
+        "image": "https://i.ibb.co/XXctY4W/Video-editing.jpg",
+       "title": "Video Editing ",
+       "instractor": "John Doe"
+
+  
+      },
+      {
+        "id": 3,
+        "image": "https://i.ibb.co/TYhMWR2/graphics-design.jpg",
+       "title": "Graphics Design",
+       "instractor": "John Doe"
+        
+  
+      },
+      {
+        "id": 4,
+        "image":"https://i.ibb.co/tKSXsr8/affiliate-merketing.jpg",
+       "title": "Affiliate Merketing",
+       "instractor": "John Doe"
+
+  
+      }
+ 
+  ]
+  

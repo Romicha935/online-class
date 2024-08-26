@@ -1,0 +1,11 @@
+.container img{
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .text-container {
+    padding-left: 26px;
+    border-left: 4px solid rgb(129, 29, 222); /* Adjust color and width as needed */
+  }
+  

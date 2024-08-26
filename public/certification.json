@@ -1,0 +1,33 @@
+[
+    {
+      "module": "Basic Classes",
+      "classes": [
+        { "title": "Introduction to Programming", "description": "Learn the basic concepts of programming." },
+        { "title": "Web Development Basics", "description": "Understand the basics of HTML, CSS, and JavaScript." }
+      ]
+    },
+    {
+      "module": "Advanced Classes",
+      "classes": [
+        { "title": "Frontend Development", "description": "Learn about modern frameworks like React, Vue.js, or Angular." },
+        { "title": "Backend Development", "description": "Discuss Node.js, Express, Django, or Flask." },
+        { "title": "Database Management", "description": "Learn to use SQL, MongoDB, or Firebase." }
+      ]
+    },
+ 
+    {
+      "module": "Project-Based Classes",
+      "classes": [
+        { "title": "Project Development", "description": "Guide students through building a project from start to finish." },
+        { "title": "Code Review & Refactoring", "description": "Teach strategies to improve code quality." }
+      ]
+    },
+    {
+      "module": "Certification Preparation",
+      "classes": [
+        { "title": "Mock Exams", "description": "Practice for certification exams." },
+        { "title": "Interview Preparation", "description": "Prepare students for real-world job interviews." }
+      ]
+    }
+  ]
+  
