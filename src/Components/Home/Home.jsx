@@ -4,13 +4,16 @@ import Contact from './Contact'
 
 import FAQ from './FAQ'
 import Instractor from './Instractor'
+import Popular from './Popular'
 
 const Home = () => {
   return (
     <div>
       <Banner/>
-      <FAQ/>
+      <Popular/>
       <Instractor/>
+      <FAQ/>
+     
      <Contact/>
     </div>
   )
