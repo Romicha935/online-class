@@ -8,6 +8,7 @@ import Popup from './Components/Popup/Popup'
 //import Contact from './Components/Home/Contact'
 import Footer from './Components/Footer/Footer'
 import { Outlet } from 'react-router-dom'
+//import SearchProvider from './Components/SearchProvider/SearchProvider'
 
 function App() {
   const [order, setOrder] = useState(false)
@@ -22,6 +23,7 @@ function App() {
         <Navbar handleOrder={handleOrder} />
         <Popup order={order} setOrder={setOrder}/>
         <Outlet/>
+        
         <Footer/>
       </div>
    
