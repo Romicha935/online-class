@@ -75,7 +75,7 @@ const AddClass = () => {
       <div className='min-h-screen shadow-md bg-gray-100 items-center px-5'>
         <h1 className='text-4xl font-bold text-center py-10'>Add Class</h1>
         <div className='space-y-4'>
-          <form onSubmit={handleSubmit} className='w-1/2 justify-center py-7 -mt-5 bg-white mx-auto' action="">
+          <form onSubmit={handleSubmit} className='w-full max-w-2xl mx-auto bg-white p-6 md:p-10 rounded-lg shadow-lg space-y-6' action="">
             <div className='px-8'>
               <label className='' htmlFor="">Enter Your Class Name</label><br />
               <input
@@ -127,7 +127,7 @@ const AddClass = () => {
 
         <div className='min-h-screen shadow-md bg-gray-100 items-center px-5 py-10'>
           <h1 className='text-4xl font-bold text-center py-10'>Class List</h1>
-          <div className='space-y-4 flex flex-wrap gap-10 justify-center'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 j'>
             {classes.map(cls => (
               <div key={cls._id} className='bg-white border-2 border-gray-300 p-4 rounded-md'>
                   <img src={cls.imgUrl} alt={cls.className} className='w-48 h-32 object-cover my-2' />

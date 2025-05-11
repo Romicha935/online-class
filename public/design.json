@@ -11,7 +11,7 @@
     },
     {
         "id": 2,
-        "image": "https://i.ibb.co/gPg2m33/UI-UX-Design.jpg",
+        "image": "https://i.ibb.co.com/7dfs4nhL/UI-UX-Design.jpg",
        "title": "UI-UX-Design ",
        "instractor": "John Doe",
        "category": "Design",
@@ -22,7 +22,7 @@
       },
       {
         "id": 3,
-        "image": "https://i.ibb.co/cYXKDvr/shopify.png",
+        "image": "https://i.ibb.co.com/LX0sNqyZ/shopify.png",
        "title": "Shopify",
        "instractor": "John Doe",
         "category": "E-commerce",
@@ -31,7 +31,7 @@
       },
       {
         "id": 4,
-        "image":"https://i.ibb.co/HTM6V7n/web-development.jpg",
+        "image":" https://i.ibb.co.com/kVRbP3Cd/web-development.jpg ",
        "title": "Web Development",
        "instractor": "John Doe",
          "category": "Development",
