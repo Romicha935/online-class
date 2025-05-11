@@ -14,6 +14,7 @@ import AddClass from './Components/AddClass/AddClass.jsx'
 
 import MyFavouriteClass from './Components/FavouriteClass/MyFavouriteClass.jsx'
 import Services from './Components/Services/Services.jsx'
+import { SearchProvider } from './Components/SearchProvider/SearchProvider.jsx'
 
 const routes = createBrowserRouter([
   {
@@ -54,9 +55,10 @@ const routes = createBrowserRouter([
 ])
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-  
+  <SearchProvider>
     <RouterProvider router={routes}>
 
     </RouterProvider>
+    </SearchProvider>
   </StrictMode>,
 )
