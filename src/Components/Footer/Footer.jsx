@@ -11,8 +11,8 @@ const FooterLinks = [
         link: '/#'
     },
     {
-        title: 'About',
-        link: '/#about'
+        title: 'Classes',
+        link: '/#classes'
     },
     {
         title: 'Contact',
@@ -43,7 +43,7 @@ const Footer = () => {
                 <ul className='flex flex-col gap-3'>
                     {
                         FooterLinks.map((link)=>(
-                            <li className='cursor-pointer hover:text-pink-800 hover:translate-x-1 duration-300 text-gray-200' key={link.title}>
+                            <li className='cursor-pointer hover:text-purple-800 hover:translate-x-1 duration-300 text-gray-200' key={link.title}>
                                 <span>{link.title}</span>
                             </li>
                         ))
@@ -58,7 +58,7 @@ const Footer = () => {
                 <ul className='flex flex-col gap-3'>
                     {
                         FooterLinks.map((link)=>(
-                            <li className='cursor-pointer hover:text-pink-800 hover:translate-x-1 duration-300 text-gray-200' key={link.title}>
+                            <li className='cursor-pointer hover:text-purple-800 hover:translate-x-1 duration-300 text-gray-200' key={link.title}>
                                 <span>{link.title}</span>
                             </li>
                         ))
