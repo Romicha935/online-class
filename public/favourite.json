@@ -1,7 +1,8 @@
 [
+
     {
       "id": 1,
-      "image": "https://i.ibb.co/VN9HHbj/javascript.png",
+      "image": "https://i.ibb.co.com/mFyw22rP/javascript.jpg",
      "title": "Javascript",
      "instractor": "Mahmud Hasan",
      "category": "Web Development",
@@ -11,7 +12,7 @@
     },
     {
         "id": 2,
-        "image": "https://i.ibb.co/cTrgVRm/react.png",
+        "image": "https://i.ibb.co.com/zVVh0Fx7/react.png",
        "title": "React Js",
        "instractor": "Mahmud Hasan",
        "category": "libary",
@@ -21,7 +22,7 @@
       },
       {
         "id": 3,
-        "image": "https://i.ibb.co/v4VmHdP/node.png",
+        "image": "https://i.ibb.co.com/sp9p2gvS/node.png",
        "title": "Node js",
        "instractor": "Mahmud Hasan",
        "category": "libary",
@@ -31,7 +32,7 @@
       },
       {
         "id": 4,
-        "image":"https://i.ibb.co/t8gQysS/mongodb.jpg",
+        "image":"https://i.ibb.co.com/fYQGRqcP/mongodb.jpg",
        "title": "MongoDB",
        "instractor": "Mahmud Hasan",
        "category": "database",
@@ -41,10 +42,11 @@
       },
       {
         "id": 5,
-        "image": "https://i.ibb.co/HG1vrQJ/ielts.png",
+        "image": "https://i.ibb.co.com/bMJDtb0p/ielts.png",
        "title": "IELTS  for Beginners",
        "instractor": "John Doe",
        "category": "Language Test",
+       "rating": 90,
        "details": "IELTS is an international standardized test of English language proficiency for non-native English language speakers. It is used for immigration, university admissions, and employment purposes."
      
   
@@ -52,29 +54,31 @@
       },
       {
         "id": 6,
-        "image": "https://i.ibb.co/1LqfcWT/web-design.jpg",
+        "image": "https://i.ibb.co.com/dsMJpqnt/web-design.jpg",
        "title": "Web Design",
        "instractor": "John Doe",
        "category": "Web Design",
-    "details": "Learn the fundamentals of web design, including layout, color theory, and typography."
+    "details": "Learn the fundamentals of web design, including layout, color theory, and typography.",
        
-  
+    "rating": 90
       },
       {
         "id": 7,
-        "image":"https://i.ibb.co/z2HPj1z/spoking.jpg",
+        "image":"https://i.ibb.co.com/v40j8Hf0/spoking.jpg",
        "title": "Spoken  for Beginners",
        "instractor": "John Doe",
          "category": "Language Learning",
+         "rating": 90,
   "details": "Spoken English courses focus on improving conversational English skills, including pronunciation, vocabulary, and fluency, to help learners communicate effectively in English-speaking environments."
   
       },
       {
         "id": 8,
-        "image": "https://i.ibb.co/tBpG9sV/python.jpg",
+        "image": "https://i.ibb.co.com/Cgqg60Y/python.jpg",
        "title": "Python",
        "instractor": "John Doe",
        "category": "Programming Language",
+       "rating": 90,
   "details": "Python is a high-level, interpreted programming language known for its readability and versatility. It is widely used in web development, data analysis, artificial intelligence, "
   
       }
