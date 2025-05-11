@@ -2,9 +2,10 @@ import { getAuth, onAuthStateChanged, signInWithEmailAndPassword } from 'firebas
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { app } from '../Firebase/Firebase.config';
+import Swal from 'sweetalert2';
 
 const Login = () => {
-  const auth = getAuth(app);
+   const auth = getAuth(app);
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -20,26 +21,40 @@ const Login = () => {
     if (email && password) {
       signInWithEmailAndPassword(auth, email, password)
         .then(res => {
-          console.log('Login successful:', res);
-          navigate('/'); // Successful login redirects to home page
+          console.log(res.user);
+          Swal.fire({
+            title: "Login Successful!",
+            text: "You have successfully logged in.",
+            icon: "success",
+            showClass: {
+              popup: 'animate__animated animate__fadeInUp animate__faster'
+            },
+            hideClass: {
+              popup: 'animate__animated animate__fadeOutDown animate__faster'
+            }
+          });
+          navigate('/'); 
         })
         .catch(err => {
-          console.log('Login error:', err);
-          setError('Login failed. Please check your credentials.');
+          console.log(err);
+          Swal.fire({
+            title: "Login Failed",
+            text: err.message,
+            icon: "error",
+            showClass: {
+              popup: 'animate__animated animate__fadeInUp animate__faster'
+            },
+            hideClass: {
+              popup: 'animate__animated animate__fadeOutDown animate__faster'
+            }
+          });
         });
     }
   };
 
-  useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (customer) => {
-      if (customer) {
-        console.log('User is logged in:', customer);
-        navigate('/'); // If user is already logged in, redirect to home
-      }
-    });
+  
 
-    return () => unsubscribe();
-  }, [auth, navigate]);
+
 
   return (
     <div className='bg-gray-100 py-10'>
