@@ -1,8 +1,12 @@
-import React from 'react'
+import { createUserWithEmailAndPassword, getAuth } from 'firebase/auth';
+import { app } from '../Firebase/Firebase.config';
+import Swal from 'sweetalert2';
+import { useNavigate } from 'react-router-dom';
+
 
 const Register = () => {
-
- // const navigate = useNavigate()
+   const auth = getAuth(app);
+ const navigate = useNavigate()
   
 
   const handleRegister = async (e) => {
@@ -13,11 +17,45 @@ const Register = () => {
     const email = data.email.value
     const password = data.password.value;
     console.log('name',name, 'email:',email, 'password:', password)
+    if(email&&password){
+      createUserWithEmailAndPassword(auth,email,password)
+      .then(res => {                                                         
+        console.log( res.user );
+        Swal.fire({
+          title: "Registration Successful!",
+          text: "Your account has been created successfully.",
+          icon: "success",
+          showClass: {
+            popup: 'animate__animated animate__fadeInUp animate__faster'
+          },
+          hideClass: {
+            popup: 'animate__animated animate__fadeOutDown animate__faster'
+          }
+        });
+        navigate('/login');
+      })
+      .catch(err => {
+        console.log(err);
+        Swal.fire({
+          title: "Registration Failed",
+          text: err.message,
+          icon: "error",
+          showClass: {
+            popup: 'animate__animated animate__fadeInUp animate__faster'
+          },
+          hideClass: {
+            popup: 'animate__animated animate__fadeOutDown animate__faster'
+          }
+        });
+      });
+  }
+      
+  
   }
   return (
     <div className='bg-gray-100 py-10'>
       <div className='bg-white max-w-md mx-auto rounded-lg border-gray-700 shadow-lg'>
-        <h1 className='text-3xl text-cente font-bold text-center pt-5 text-purple-500'>Create an account</h1>
+        <h1 className='text-3xl text-cente font-bold text-center pt-5 text-purple-500  underline '>Create an account</h1>
         <form onSubmit={handleRegister} className=''  >
         <div className='px-6 py-4'>
             <label htmlFor="name" className='block text-gray-700 text-sm font-semibold mb-2'>Name*</label>

@@ -62,21 +62,21 @@ const Banner = () => {
     }
 
   return (
-    <div className='relative   bg-gray-100 flex justify-center items-center duration-200'>
+    <div className='relative border-t  bg-gray-100 flex justify-center items-center duration-200'>
    
      <div className='container pb-8 sm:pb-0'>
         <Slider {...settings}>
         {imageList.map((data)=>(
             <div className='-mt-7' key={data.id}>
-             <img className='w-full h-[500px] relative top-0' src={data.img} alt="" />
+             <img className='w-full h-screen relative top-0' src={data.img} alt="" />
                 {/*text contetnt section */}
                 <div className='absolute top-36 pl-28 gap-y-9 w-2/3 '>
                   <h1 data-aos='Zoom-out'
                   data-aos-duration='500'
-                  data-aos-once='true' className='text-2xl text-gray-800 font-bold'>{data.title}</h1>
+                  data-aos-once='true' className='text-2xl text-gray-800 font-bold'>Online Class <span className='text-purple-500'>Start your now</span></h1>
                   <p data-aos='fade-up'
                   data-aos-duration='500'
-                  data-aos-delay='200' className='text-sm py-3 w-80'>{data.description}</p>
+                  data-aos-delay='200' className='text-sm py-3 w-80 italic'>{data.description}</p>
                   <div data-aos='fade-up' data-aos-duration='500'
                   data-aos-delay='300' className='py-3'>
                     <button  className='bg-gradient-to-r from-purple-500 to-pink-400 p-1  rounded-full hover:scale-105 px-4 text-white'>See Online class</button>
