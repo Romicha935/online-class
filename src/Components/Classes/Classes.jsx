@@ -1,28 +1,43 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import popular from '../../../public/popular.json'
 import active from '../../../public/active.json'
 import design from '../../../public/design.json'
 import certifications from '../../../public/certification.json'
+import addclass from '../../../public/Addclass.json'
 import { FaStar } from 'react-icons/fa6'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import axios from 'axios'
+import { SearchContext,  } from '../SearchProvider/SearchProvider'
 
 
 const Classes = () => {
   //const[classes, setClasses] = useState([])
-  const [popular,setPopular] = useState([])
+  //const [addclass,setAddclass] = useState([])
+  const [addclass, setAddclass] = useState([]);
+  const { searchTerm } = useContext(SearchContext);
+
+
+  //const {searchTerm} = useContext(searchContext)
 //const [array,setArray] = useState(classes)
   useEffect(()=> {
     axios.get('http://localhost:3000/classes')
     .then((res)=> {
       console.log(res);
-      setPopular(res.data)
+      setAddclass(res.data)
     })
     .catch((err)=> {
       console.log(err)
     })
   },[]);
+
+  const filteredClasses = addclass.filter(item =>
+    item.className.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+  //const filteredClasses = active.filter((item)=> {
+   // item.className.toLowerCase().includes(searchTerm.toLowerCase())
+    //console.log(filteredClasses)
+  //})
 
     React.useEffect(() => {
         AOS.init({
@@ -40,13 +55,13 @@ const Classes = () => {
                 <h1   data-aos='fade-up'
         data-aos-delay='200'
         data-aos-duration='300'
-         className='text-3xl font-semibold  px-20 pt-10'><span className='text-purple-600'>Popular</span> Class </h1>
+         className='text-3xl font-semibold  px-20 pt-10'><span className='text-purple-600'>Add Your</span> Class </h1>
                  <div  data-aos='fade-up'
         data-aos-delay='300'
         data-aos-duration='800'
          className='flex flex-wrap gap-10 justify-center py-10 w-full '>
                     {
-                        popular.map((item,idx)=>(
+                        filteredClasses.map((item,idx)=>(
                             <div   data-aos='fade-up'
                             data-aos-delay={`${300 + idx * 100}`}
                             data-aos-duration='600'
@@ -147,9 +162,9 @@ const Classes = () => {
             </div>
         
 
-         <div>
-            <h1 data-aos='fade-up' data-aos-delay='200' data-aos-duration='300' className='text-4xl font-bold text-center py-7'><span className='text-purple-600'>Certifications</span> Class</h1>
-         <div data-aos='fade-right' data-aos-duration='400' data-aos-delay='500' className='grid grid-cols-2 gap-10 mx-20 items-center py-10 '>
+         <div className=''>
+            <h1 data-aos='fade-up' data-aos-delay='200' data-aos-duration='300' className='text-4xl font-bold text-center py-7  '><span className='text-purple-600'>Certifications</span> Class</h1>
+         <div data-aos='fade-right' data-aos-duration='400' data-aos-delay='500' className='grid md:grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 mx-20 items-center py-10 '>
       {certifications.map((module, idx) => (
         <div    data-aos="fade-up"
         data-aos-delay={`${300 + idx * 100}`}
