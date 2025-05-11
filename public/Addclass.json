@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/HG1vrQJ/ielts.png",
+     "title": "IELTS  for Beginners",
+     "instractor": "John Doe",
+     "category": "Language Test",
+     "details": "IELTS is an international standardized test of English language proficiency for non-native English language speakers. It is used for immigration, university admissions, and employment purposes."
+   
+
+   
+    },
+    {
+        "id": 2,
+        "image": "https://i.ibb.co/tBpG9sV/python.jpg",
+       "title": "Python",
+       "instractor": "John Doe",
+       "category": "Programming Language",
+  "details": "Python is a high-level, interpreted programming language known for its readability and versatility. It is widely used in web development, data analysis, artificial intelligence, "
+  
+      },
+      {
+        "id": 3,
+        "image": "https://i.ibb.co/9NJGnVZ/javascript.jpg",
+       "title": "Javascript",
+       "instractor": "John Doe",
+       "category": "Programming Language",
+  "details": "JavaScript is a versatile programming language commonly used in web development to create interactive effects within web browsers. It is also used for server-side programming and mobile app development."
+},
+  
+  
+      {
+        "id": 4,
+        "image":"https://i.ibb.co/z2HPj1z/spoking.jpg",
+       "title": "Spoken  for Beginners",
+       "instractor": "John Doe",
+         "category": "Language Learning",
+  "details": "Spoken English courses focus on improving conversational English skills, including pronunciation, vocabulary, and fluency, to help learners communicate effectively in English-speaking environments."
+  
+      }
+ 
+  ]
+  

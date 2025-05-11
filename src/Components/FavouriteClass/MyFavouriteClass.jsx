@@ -21,18 +21,18 @@ const MyFavouriteClass = () => {
         <h1 data-aos='fade-up'
         data-aos-delay='200'
         data-aos-duration='300'
-         className='text-4xl font-bold py-10 mx-20'>My Favourite Class</h1>
+         className='text-4xl font-bold py-10 mx-20'><span className='text-purple-600 italic'>My Favourite</span> Class</h1>
         <div data-aos='fade-up'
         data-aos-delay='300'
         data-aos-duration='800'
-         className='flex flex-wrap gap-10 py-8 px-5 justify-center'>
-          {
+         className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7 py-8 px-10 '>
+          {   
             favourite.map((item,idx)=>(
               <div data-aos='fade-up'
               data-aos-delay={`${300 + idx * 100}`}
-              data-aos-duration='600' key={idx} className='border  p-3 max-w-56 shadow-xl'>
+              data-aos-duration='600' key={idx} className='border px-6  p-3 w-full shadow-xl'>
                   <img data-aos-delay={`${400 + idx * 100}`}
-                data-aos-duration='800' className='h-44 w-48 rounded-md ' src={item.image} alt="" />
+                data-aos-duration='800' className='h-44 w-48 object-cover rounded-md ' src={item.image} alt="" />
                   <h1  data-aos='fade-up'
                 data-aos-delay={`${500 + idx * 100}`}
                 data-aos-duration='600' className='pt-1 font-bold'>{item.title}</h1>
