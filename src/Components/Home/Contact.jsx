@@ -22,8 +22,8 @@ const Contact = () => {
                   data-aos-delay='200'
                   data-aos-once='true'
                    className='text-3xl font-semibold text-center py-5'>Contact <span className='text-purple-500'>for online class</span></h1>
-  <div className='flex gap-10 py-6 px-10'>
-  <div data-aos='fade-right' className=' w-1/2  space-y-8  bg-white py-11 px-6 shadow-md rounded-xl'>
+  <div className='flex flex-col lg:flex-row gap-10 md:px-8 py-6 px-10 w-full max-w-5xl'>
+  <div data-aos='fade-right' className='w-full lg:w-1/2  space-y-8  bg-white py-11 px-6 shadow-md rounded-xl'>
 
 
       <div className='text-center'>
